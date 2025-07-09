@@ -1,0 +1,114 @@
+*,section,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Almarai;
+     font-weight: 700; 
+
+
+  }
+
+.headerc {
+    background-image: url('calc.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    opacity: 0.9;
+    position: relative; 
+}
+
+#nav-ser {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 75%;
+    font-size: 40px;
+    color: #2c2c2c;
+    text-decoration: bold;
+    text-align: center;
+    }
+.section-calc {
+    display: grid;
+    place-items: center; 
+    font-family: Arial, sans-serif;
+    background-color: #e7e5e0;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin: 0;
+    text-decoration: none;
+}
+.section-title{
+    font-family: 'Cairo', sans-serif;
+    color: #000000;
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: none;
+    margin: 7.5rem 0 0 0; 
+
+}
+
+.container {
+    background-color: #f6f5f3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 20em;
+    padding: 20px;
+    text-align: right;
+}
+
+.container label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.container select,
+.container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.total {
+    background-color: #686767;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+} 
+
+
+
+@media (max-width: 600px) {
+    #navDiv{
+        transition: all 0.3s;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        overflow: hidden;
+     }
+    
+    
+    #nav-ser {
+        margin:auto;
+        text-align: center;
+    }
+    .section-calc{
+        height: 80vh;
+    }
+
+    #anhor-nav {
+     font-size: 35px;
+    }
+    .container {
+        max-width: 400px;}
+}

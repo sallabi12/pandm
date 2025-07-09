@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Form</title>
+    <link rel="stylesheet" href="pandm.css" />
+    <link rel="stylesheet" href="calc.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <script src="calc.js"></script>
+  </head>
+  <header>
+      <div id="header-cont">
+        <div class="menu-icon">
+          <a href="https://www.facebook.com/pandmonlineshopping">
+            <i id="icon" class="fa-brands fa-facebook"></i></a>
+        </div>
+        <img id="pm-img" src="pandm2.png" />
+        <div>
+          <i id="icon" class="fa-solid fa-bars" onclick="clickMe()"></i>
+        </div>
+        </div>
+      <nav>
+        <ul id="navDiv">
+          <li><a href="index.html#aboutus">من نحن</a></li>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <li><a href="index.html#sec-service">خدماتنا</a></li>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <li><a href="index.html#service">طريقة الطلب</a></li>
+           &nbsp&nbsp&nbsp&nbsp&nbsp
+          <li><a href="index.html">العودة</a></li>
+        </ul>
+      </nav>
+    </header>
+ 
+  <body style="background-color: #ffffff">
+    <section class="headerc">
+      <nav>
+        <div id="nav-ser">
+              حساب الاسعار
+        </div>
+      </nav>
+    </section>
+
+    <section class="section-calc">
+
+      <div class="container"  align="right">
+        <label for="location">الموقع</label>
+        <select id="location" onchange="updateForm()">
+          <option value="turkey">تركيا (ليره)</option>
+          <option value="shein">شي ان (دولار)</option>
+        </select>
+
+        <label for="price">سعر المنتج</label>
+        <input type="number"id="price"value="0"step="0.01"onchange="updateTotalPrice()"/>
+        <div id="category-container"></div>
+        <div class="total">
+          السعر بالدينار شامل الشحن
+          <br />
+          <span id="total-price">0</span>
+
+        </div>
+      </div>
+    </section>
+
+    
+    <footer>
+      <br />
+      <div class="foot-div">
+        <a href="https://www.facebook.com/pandmonlineshopping"><div class="foot-icon"><i class="fa-brands fa-facebook"></i></div></a>
+        <a href="https://wa.me/218925897544" target="_blank"></a><div class="foot-icon"><i class="fa-brands fa-whatsapp"></i></div></a>
+        <div class="foot-icon"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+      <div>
+        <br />
+        <br />
+      </div>
+      <div>
+        <h3>للتواصل مع الشركة :</h3>
+        <br />
+        <div color="white" class="bl"> بنغازي 0916940520</div>
+        <br />
+        <div color="white"  class="bl"> مصراتة 0915897544</div>
+        <br />
+        <div color="white"  class="bl"> طرابلس 0915897544</div>
+      </div>
+      <br />
+     <a style="font-size: 10px;"href="https://wa.me/905449219974" target="_blank"><div style="color: gray" id="copy">
+        <strong>©</strong> Copyright <strong>2025</strong>. All Rights Reserved
+        Powered by <strong>A.Sallabi</strong>
+      </div></a>
+    </footer>
+
+      <script>
+      if (window.innerWidth <= 768) {
+        let navDiv = document.getElementById("navDiv");
+        navDiv.style.maxHeight = "0px";
+      }
+
+      function clickMe() {
+        if (navDiv.style.maxHeight == "0px") {
+          navDiv.style.maxHeight = "300px";
+        } else {
+          navDiv.style.maxHeight = "0px";
+        }
+      }
+      </script>
+  </body>
+
+</html>
